@@ -17,7 +17,10 @@
             <div class="col-md-8">
                 @foreach($thread->replies as $reply)
                 <hr>
-                    <div class="card-header">{{$reply->owner->name}} said {{$reply->created_at}}</div>
+                    <div class="card-header">
+                        {{$reply->owner->name}}
+                        said {{$reply->created_at->diffForHumans()}}
+                    </div>
                     <div class="card">
                     <div class="card-body">
                         {{$reply->body}}
