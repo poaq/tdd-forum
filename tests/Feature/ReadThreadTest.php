@@ -43,10 +43,4 @@ class ReadThreadTest extends TestCase
 
     }
 
-    /** @test */
-    function a_user_can_read_replies_that_are_associated_with_thread()
-    {
-
-    }
-
 }
